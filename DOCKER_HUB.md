@@ -8,7 +8,7 @@
 
 # Featured tags
 
-- `latest`, `6.6.15`, `23.0.6`
+- `latest`, `6.6.15`, `23.0.5`
 
 # Quick reference
 
