@@ -140,6 +140,10 @@ task deb(type: Deb) {
     from ("$buildDir/datadir/cas") {
       into '/etc/georchestra/cas'
     }
+    configurationFile('/etc/georchestra/cas/config/cas.properties')
+    configurationFile('/etc/georchestra/cas/config/log4j2.xml')
+    configurationFile('/etc/georchestra/cas/services/georchestra-1001.json')
+    configurationFile('/etc/georchestra/cas/services/oauth-2001.json')
     link "/usr/share/lib/georchestra-cas/cas-generic.war", "/usr/share/lib/georchestra-cas/cas.war"
 }
 
