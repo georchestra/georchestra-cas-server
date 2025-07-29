@@ -25,7 +25,7 @@ jobs:
       - name: Calculating the docker image tag
         if: github.repository == 'georchestra/georchestra-cas-server'
         id: version
-        run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
+        run: echo "VERSION=$(echo $GITHUB_REF | cut -d / -f 3)" >> $GITHUB_OUTPUT
 
       - name: Build a docker image
         run: |
